@@ -1,0 +1,20 @@
+nav {
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav li a {
+    color: black;
+}
+
+nav a:hover {
+    color: rgb(110, 0, 59) !important;
+}
+
+
+
+
+

@@ -1,0 +1,29 @@
+.carreira {
+    height: auto;
+    width: 100%;
+}
+
+.how-section1{
+    margin-top:-15%;
+    padding: 10%;
+}
+.how-section1 h4{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+.how-section1 .subheading{
+    color: #C89F8C;
+    font-size: 20px;
+}
+.how-section1 .row
+{
+    margin-top: 100px;
+}
+.how-img 
+{
+    text-align: center;
+}
+.how-img img{
+    width: 40%;
+}

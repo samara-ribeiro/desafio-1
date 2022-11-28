@@ -1,0 +1,196 @@
+/*base*/
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+  }
+
+body {
+    margin: 0;
+    }
+
+main {
+  min-width: 320px;
+  max-width: 1600px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+    
+h1, h2, h3, h4, h5, p, span {
+    margin: 0;
+    color: black;
+    }
+    
+header {
+     position: relative;
+     top: 0;
+     height: auto;
+     width: 100%;
+    }
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+.container {
+    height: auto;
+}
+
+ /*navegação*/
+
+ nav {
+    height: 80px;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.nav li a {
+    color: black;
+}
+
+nav a:hover {
+    color: rgb(155, 7, 7) !important;
+}
+
+
+/*banner*/
+
+.masthead  {
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    text-shadow: 2px 2px 2px rgba(0,0,0,.2);
+
+ }
+
+ 
+ h1 {
+    font-size: 4rem;
+    color: white;
+ }
+
+ .color-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+ }
+
+ @media (max-width: 768px) {
+    .masthead {
+        min-height: 30vh;
+        width: auto;
+    }
+
+    h1 {
+        font-size: calc(1.525rem + 3.3vw);
+        margin-top: 80px;
+    }
+ }
+
+
+ /*sobre*/
+
+ .definicao {
+    height: 100vh;
+}
+
+section {
+    padding: 100px 0;
+    overflow: hidden;
+}
+.mb-2-3, .my-2-3 {
+    margin-bottom: 2.3rem;
+}
+
+.section-title {
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+.text-primary {
+    color: red !important;
+}
+
+@media screen and (min-width: 992px){
+    .p-lg-7 {
+        padding: 4rem;
+    }
+}
+@media screen and (min-width: 768px){
+    .p-md-6 {
+        padding: 3.5rem;
+    }
+}
+@media screen and (min-width: 576px){
+    .p-sm-2-3 {
+        padding: 2.3rem;
+    }
+}
+.p-1-9 {
+    padding: 1.9rem;
+}
+
+.bg-secondary {
+    background: #C89F8C !important;
+}
+@media screen and (min-width: 576px){
+    .pe-sm-6, .px-sm-6 {
+        padding-right: 3.5rem;
+    }
+}
+@media screen and (min-width: 576px){
+    .ps-sm-6, .px-sm-6 {
+        padding-left: 3.5rem;
+    }
+}
+.pe-1-9, .px-1-9 {
+    padding-right: 1.9rem;
+}
+.ps-1-9, .px-1-9 {
+    padding-left: 1.9rem;
+}
+.pb-1-9, .py-1-9 {
+    padding-bottom: 1.9rem;
+}
+.pt-1-9, .py-1-9 {
+    padding-top: 1.9rem;
+}
+.mb-1-9, .my-1-9 {
+    margin-bottom: 1.9rem;
+}
+@media (min-width: 992px){
+    .d-lg-inline-block {
+        display: inline-block!important;
+    }
+}
+.rounded {
+    border-radius: 0.25rem!important;
+}
+
+@media (max-width: 768px) {
+    .embed-responsive-item {
+        min-height: 30vh;
+        width: 100%;
+    }
+ }
+
+/*Prós e Cons*/
+
+.card-columns {
+    @include media-breakpoint-only(lg) {
+      column-count: 4;
+    }
+    @include media-breakpoint-only(xl) {
+      column-count: 5;
+    }
+  }
