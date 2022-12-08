@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <link rel="icon" type="image/x-icon" href="./img/Logo.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/56a2f16d57.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/56a2f16d57.js" crossorigin="anonymous"></script>   
         <title>Samara Ribeiro</title>
 
         <!--Bootstrap-->
@@ -232,7 +232,7 @@
     </section>
     </div>
 
-    <!--Contato--> 
+    <!--Contato-->
 
     <section class="contato"  id="contato">
         <div class="container">
@@ -241,27 +241,44 @@
             <form>
                 <!-- Name input -->
                 <div class="form-outline mb-4">
-                    <label class="form-label" for="form4Example1">NOME:</label>
-                    <input type="text" id="form4Example1" class="form-control" />
+                    <label class="form-label" for="formNome">NOME:</label>
+                    <input type="text" id="formNome" class="form-control" />
                 </div>
               
                 <!-- Email input -->
                 <div class="form-outline mb-4">
-                    <label class="form-label" for="form4Example2">E-MAIL:</label>
-                    <input type="email" id="form4Example2" class="form-control" />
+                    <label class="form-label" for="formEmail">E-MAIL:</label>
+                    <input type="email" id="formEmail" class="form-control" />
                 </div>
               
                 <!-- Message input -->
                 <div class="form-outline mb-4">
-                    <label class="form-label" for="form4Example3">MENSAGEM:</label>
-                    <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                    <label class="form-label" for="formMensagem">MENSAGEM:</label>
+                    <textarea class="form-control" id="formMensagem" rows="4"></textarea>
                 </div>
               
                 <!-- Submit button -->
-                <button type="submit" class="btn btn-primary btn-block mb-4">ENVIAR</button>
-              </form>
+                <button onclick='enviar()' type="submit" class="btn btn-primary btn-block mb-4">ENVIAR</button>
+    
+            </form>  
+            
+            <div class="accordion accordion-flush" id="listaMensagens" style="margin-bottom: 50px; margin-top: 50px;">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button onclick='listarMensagens ()' class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                          MENSAGENS RECEBIDAS
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="dados"></div>
+                        <button onclick='limparItens()' type="submit" class="btn btn-light btn-block mb-4" style="margin-top: 20px; margin-left: 20px;">Limpar</button>
+                      </div>
+                    </div>
+            </div>
 
-            <div class="row">
+            <script src="./script/contato.js"></script>
+
+            <div class="row g-3">
               <div class="col-12 col-md-6 col-lg-4">
                 <div class="card border-0">
                    <div class="card-body text-center">
