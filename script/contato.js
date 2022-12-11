@@ -3,8 +3,6 @@ var arr = [];
 
 function enviar(){
 
-    alert('Mensagem enviada com sucesso.');
-
     if (localStorage.meuArr){
         arr = JSON.parse(localStorage.getItem('meuArr'));
     };
@@ -13,12 +11,21 @@ function enviar(){
     dadosMensagem.formNome = document.getElementById("formNome").value;
     dadosMensagem.formEmail = document.getElementById("formEmail").value;
     dadosMensagem.formMensagem = document.getElementById("formMensagem").value;
+
+    if (dadosMensagem.formNome == ""){
+        alert('Digite seu nome.')
+    } else if (dadosMensagem.formEmail == "") {
+        alert('Digite seu e-mail.')
+    } else if (dadosMensagem.formMensagem == "") {
+        alert('Digite sua mensagem.')
+    } else {
+    alert('Mensagem enviada com sucesso.');
     arr.push(dadosMensagem);
     document.getElementById("formNome").value = "";
     document.getElementById("formEmail").value = "";
     document.getElementById("formMensagem").value = "";
     localStorage.meuArr = JSON.stringify(arr);
-
+    }
 };
 
 function listarMensagens(){
